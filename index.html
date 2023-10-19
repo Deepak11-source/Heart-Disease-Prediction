@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Register-login Form</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+  <script src="lr.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+  <div class="left">         
+    <img src="heart.jpg">
+  </div>
+  <div class="right">
+    <div class="tabs">
+      <ul>
+        <li class="register_li">Register</li>
+        <li class="login_li">login</li>
+      </ul>
+    </div> 
+    
+    <form action="insert.php" method="post">
+      <div class="register" method="post">         
+        <div class="input_field">         
+          <input  id="ur" type="text" placeholder="Username" class="input">
+        </div>
+        <div class="input_field">
+          <input id="er" type="text" placeholder="E-mail" class="input">
+        </div>
+        <div class="input_field">
+          <input id="ep" type="password" placeholder="Password" class="input">
+        </div>
+        <div class="btn" type="submit"><a href="#">Register</a></div>       
+      </div>
+    </form>  
+  
+    <form action="login.php" method="post">
+    <div class="login">
+      <div class="input_field">
+        <input id="le" type="text" placeholder="E-mail" class="input">
+      </div>
+      <div class="input_field">
+        <input id="lp" type="password" placeholder="Password" class="input">
+      </div>
+      <div class="btn" type ="submit"><a href="#">Login</a></div>
+    </div>
+  </form> 
+
+  </div>
+</div>
+</body>
+</html>
